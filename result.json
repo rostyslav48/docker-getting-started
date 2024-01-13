@@ -1,0 +1,134 @@
+
+
+## Overview
+
+                    │           Analyzed Image            
+────────────────────┼─────────────────────────────────────
+  Target            │  getting-started:latest             
+    digest          │  e24f30fb0e26                       
+    platform        │ linux/amd64                         
+    vulnerabilities │    2C     3H     4M     0L     1?   
+    size            │ 98 MB                               
+    packages        │ 620                                 
+
+
+## Packages and Vulnerabilities
+
+   1C     1H     0M     0L  sqlite3 5.1.2
+pkg:npm/sqlite3@5.1.2
+
+    ✗ CRITICAL GMS-2023-755 [OWASP Top Ten 2017 Category A9 - Using Components with Known Vulnerabilities]
+      https://scout.docker.com/v/GMS-2023-755
+      Affected range : >=5.0.0                                       
+                     : <5.1.5                                        
+      Fixed version  : 5.1.5                                         
+      CVSS Score     : 9.8                                           
+      CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H  
+    
+    ✗ HIGH CVE-2022-43441 [Improper Control of Dynamically-Managed Code Resources]
+      https://scout.docker.com/v/CVE-2022-43441
+      Affected range : >=5.0.0                                       
+                     : <5.1.5                                        
+      Fixed version  : 5.1.5                                         
+      CVSS Score     : 8.1                                           
+      CVSS Vector    : CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H  
+    
+
+   1C     0H     0M     0L  @babel/traverse 7.20.1
+pkg:npm/%40babel/traverse@7.20.1
+
+    ✗ CRITICAL CVE-2023-45133 [Incomplete List of Disallowed Inputs]
+      https://scout.docker.com/v/CVE-2023-45133
+      Affected range : <7.23.2                                       
+      Fixed version  : 7.23.2                                        
+      CVSS Score     : 9.3                                           
+      CVSS Vector    : CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H  
+    
+
+   0C     1H     0M     0L  http-cache-semantics 4.1.0
+pkg:npm/http-cache-semantics@4.1.0
+
+    ✗ HIGH CVE-2022-25881 [Inefficient Regular Expression Complexity]
+      https://scout.docker.com/v/CVE-2022-25881
+      Affected range : <4.1.1                                        
+      Fixed version  : 4.1.1                                         
+      CVSS Score     : 7.5                                           
+      CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H  
+    
+
+   0C     1H     0M     0L  json5 2.2.1
+pkg:npm/json5@2.2.1
+
+    ✗ HIGH CVE-2022-46175 [Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution')]
+      https://scout.docker.com/v/CVE-2022-46175
+      Affected range : >=2.0.0                                       
+                     : <2.2.2                                        
+      Fixed version  : 2.2.2                                         
+      CVSS Score     : 7.1                                           
+      CVSS Vector    : CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:L/A:H  
+    
+
+   0C     0H     1M     0L  semver 6.3.0
+pkg:npm/semver@6.3.0
+
+    ✗ MEDIUM CVE-2022-25883 [Inefficient Regular Expression Complexity]
+      https://scout.docker.com/v/CVE-2022-25883
+      Affected range : >=6.0.0                                       
+                     : <6.3.1                                        
+      Fixed version  : 6.3.1                                         
+      CVSS Score     : 5.3                                           
+      CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L  
+    
+
+   0C     0H     1M     0L  semver 5.7.1
+pkg:npm/semver@5.7.1
+
+    ✗ MEDIUM CVE-2022-25883 [Inefficient Regular Expression Complexity]
+      https://scout.docker.com/v/CVE-2022-25883
+      Affected range : <5.7.2                                        
+      Fixed version  : 5.7.2                                         
+      CVSS Score     : 5.3                                           
+      CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L  
+    
+
+   0C     0H     1M     0L  semver 7.0.0
+pkg:npm/semver@7.0.0
+
+    ✗ MEDIUM CVE-2022-25883 [Inefficient Regular Expression Complexity]
+      https://scout.docker.com/v/CVE-2022-25883
+      Affected range : >=7.0.0                                       
+                     : <7.5.2                                        
+      Fixed version  : 7.5.2                                         
+      CVSS Score     : 5.3                                           
+      CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L  
+    
+
+   0C     0H     1M     0L  semver 7.3.8
+pkg:npm/semver@7.3.8
+
+    ✗ MEDIUM CVE-2022-25883 [Inefficient Regular Expression Complexity]
+      https://scout.docker.com/v/CVE-2022-25883
+      Affected range : >=7.0.0                                       
+                     : <7.5.2                                        
+      Fixed version  : 7.5.2                                         
+      CVSS Score     : 5.3                                           
+      CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L  
+    
+
+   0C     0H     0M     0L     1?  openssl 3.1.4-r2
+pkg:apk/alpine/openssl@3.1.4-r2?os_name=alpine&os_version=3.19
+
+    ✗ UNSPECIFIED CVE-2023-6129
+      https://scout.docker.com/v/CVE-2023-6129
+      Affected range : <3.1.4-r3  
+      Fixed version  : 3.1.4-r3   
+    
+
+
+10 vulnerabilities found in 9 packages
+  UNSPECIFIED  1  
+  LOW          0  
+  MEDIUM       4  
+  HIGH         3  
+  CRITICAL     2  
+
