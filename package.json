@@ -10,7 +10,7 @@
         "inspect-security": "docker scout cves --format sarif --output security-report.json getting-started",
         "docker-build": "docker build --platform linux/amd64 -t getting-started .",
         "upload-security-report": "node ./src/report/createReport.js",
-        "security-report": "npm run docker-build && npm run inspect-security && npm run upload-security-report"
+        "security-report": "yarn run docker-build && yarn run inspect-security && yarn run upload-security-report"
     },
     "dependencies": {
         "dotenv": "^16.3.1",
