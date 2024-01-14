@@ -7,10 +7,16 @@
         "prettify": "prettier -l --write \"**/*.js\"",
         "test": "jest",
         "dev": "nodemon -L src/index.js",
-        "inspect-security": "docker scout cves --output result.json getting-started"
+        "inspect-security": "docker scout cves --format sarif --output security-report.json getting-started",
+        "docker-build": "docker build --platform linux/amd64 -t getting-started .",
+        "upload-security-report": "node ./src/report/createReport.js",
+        "security-report": "npm run docker-build && npm run inspect-security && npm run upload-security-report"
     },
     "dependencies": {
+        "dotenv": "^16.3.1",
         "express": "^4.18.2",
+        "fs": "^0.0.1-security",
+        "googleapis": "^130.0.0",
         "mysql2": "^2.3.3",
         "sqlite3": "^5.1.2",
         "uuid": "^9.0.0",

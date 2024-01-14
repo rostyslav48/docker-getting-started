@@ -1,0 +1,36 @@
+name: Security scan
+on: [push]
+jobs:
+    BuildAndScan:
+        name: build & scan
+        runs-on: ubuntu-latest
+        permissions:
+            pull-requests: write
+        env:
+            CLIENT_EMAIL: ${{ secrets.CLIENT_EMAIL }}
+            PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+        steps:
+            - name: 'Checkout repository'
+              uses: actions/checkout@v4
+
+            - name: 'Install dependencies'
+              run: npm install
+
+            - name: 'Create build'
+              run: npm run docker-build
+
+            - name: Authenticate to Docker
+              uses: docker/login-action@v3
+              with:
+                  username: ${{ secrets.DOCKER_USER }}
+                  password: ${{ secrets.DOCKER_PAT }}
+
+            - name: 'Run security check'
+              uses: docker/scout-action@v1
+              with:
+                  command: cves
+                  image: ${{ steps.meta.outputs.tags }}
+                  sarif-file: security-report.json
+
+            - name: 'Upload file'
+              run: npm run upload-security-report
