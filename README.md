@@ -12,7 +12,7 @@
 > Checks the docker image for vulnerabilities and saves them to the security-report.json file
 
 ### $ npm run upload-security-report
-> Converts .json to .csv and uploads it to the Google Drive
+> Converts security-report.json to security-report.csv and uploads it to the Google Drive
 
 # Getting started
 
