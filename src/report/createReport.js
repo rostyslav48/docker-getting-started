@@ -1,4 +1,4 @@
-const { parseToCsv } = require('./utils/prepareToCsv');
+const { parseToCsv } = require('./utils/parseToCsv');
 const { uploadToDrive } = require('./utils/uploadToDrive');
 
 const FILE_IN_CSV = 'security-report.json';
